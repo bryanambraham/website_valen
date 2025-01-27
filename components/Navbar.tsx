@@ -62,7 +62,7 @@ const menuItems = [
     ]
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-[#2A1810] text-white font-bold">
+    <header className="sticky top-0 z-50 w-full border-b bg-[#2A1810] text-white font-bold text-xs lg:text-base">
       <div className="container flex h-16 items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <Image
@@ -126,7 +126,7 @@ export function Navbar() {
               {/* <img src="/menu.svg" alt=""/> */}
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-[500px] bg-[#2A1810] text-white border-l-white/20">
+          <SheetContent side="right" className="min-w-fit bg-[#2A1810] text-white border-l-white/20">
             <nav className="flex flex-col justify-between h-full">
               <div className="flex flex-col gap-6">
                 {/* Main Menu Items */}
