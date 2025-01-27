@@ -80,7 +80,7 @@ export function Navbar() {
               <NavigationMenuItem key={item.title}>
                 {item.items ? (
                   <>
-                    <NavigationMenuTrigger className="bg-transparent text-white hover:text-white font-bold">
+                    <NavigationMenuTrigger className="bg-transparent text-white hover:text-white font-bold text-xs lg:text-base">
                       {item.title}
                     </NavigationMenuTrigger>
                     {/* buat hasil dropdown dari Pendirian usaha */}
