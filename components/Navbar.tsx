@@ -30,7 +30,7 @@ const menuItems = [
       { title: "PMA", href: "/PMA" },
       { title: "Koperasi", href: "/Koperasi" },
       { title: "Perkumpulan", href: "/Perkumpulan" },
-      { title: "Yayasan", href: "/yayasan" },
+      { title: "Yayasan", href: "/Yayasan" },
     ],
   },
   {
@@ -63,7 +63,7 @@ const menuItems = [
 export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-[#2A1810] text-white font-bold text-xs lg:text-base">
-      <div className="container flex h-16 items-center">
+      <div className="container flex h-16 md:justify-center items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <Image
             src="hilink-logo.svg"
@@ -122,7 +122,7 @@ export function Navbar() {
         <Sheet>
           <SheetTrigger asChild>
             <Button variant="ghost" size="icon" className="text-white" >
-              <Menu  style={{ width: "27px", height: "27px"}}/>
+              <Menu  style={{ width: "27px", height: "27px"}}  className="absolute right-6 md:relative md:top-auto md:right-auto flex justify-center items-center"/>
               {/* <img src="/menu.svg" alt=""/> */}
             </Button>
           </SheetTrigger>

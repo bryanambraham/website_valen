@@ -9,6 +9,10 @@ const page = () => {
         backgroundImage='hero.png'
         title={["CREATIVE SOLUTIONS","TO IMPROVE","YOUR BUSINESS!"]}
         />
+
+        <div className='container'>
+          
+        </div>
     </main>
   )
 }

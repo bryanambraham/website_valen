@@ -15,6 +15,7 @@ interface ServiceCardProps {
   process: {
     title: string
     items: string[]
+    price?: string[]
   }
 }
 
@@ -49,7 +50,25 @@ export function ServiceCard({ title, subtitle, requirements, process }: ServiceC
               ))}
             </ul>
           </div>
+
+          <div className="flex flex-col gap-2 justify-center items-center">
+          {process.price?.map((step, index) => (
+                          <ul
+                          key={index}
+                          className={`text-sm ${
+                            index === 0
+                              ? "text-gray-600 line-through" // harga pertama, misalnya hijau
+                              : index === 1
+                              ? "text-black font-bold" // harga kedua, misalnya kuning
+                              : "text-black font-bold" // harga ketiga, misalnya merah
+                          }`}
+                        >
+                          {step}
+                        </ul>
+              ))}
+          </div>
         </div>
+
         <div className="mt-6 flex justify-center">
           <Button
             className="bg-[#6B4536] hover:bg-[#8B6556] text-white px-8"
