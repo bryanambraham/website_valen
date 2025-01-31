@@ -81,8 +81,11 @@ export function Navbar() {
                 {item.items ? (
                   <>
                     <NavigationMenuTrigger className="bg-transparent text-white hover:text-white font-bold text-xs lg:text-base">
+                      <Link href={item.href}>
                       {item.title}
+                      </Link>
                     </NavigationMenuTrigger>
+                    
                     {/* buat hasil dropdown dari Pendirian usaha */}
                     <NavigationMenuContent>
                       <ul className="grid w-[400px] gap-3 p-4 bg-[#2A1810] text-white"> 
@@ -121,8 +124,8 @@ export function Navbar() {
     {/* Hamburger Menu - Always Visible */}
         <Sheet>
           <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" className=" text-white right-6 md:relative md:top-auto md:right-auto flex justify-center items-center" >
-              <Menu  style={{ width: "27px", height: "27px"}}  className="right-6 md:relative md:top-auto md:right-auto flex justify-center items-center"/>
+            <Button variant="ghost" size="icon" className="text-white absolute right-5">
+              <Menu  style={{ width: "27px", height: "27px"}}/>
               {/* <img src="/menu.svg" alt=""/> */}
             </Button>
           </SheetTrigger>
@@ -130,7 +133,7 @@ export function Navbar() {
             <nav className="flex flex-col justify-between h-full">
               <div className="flex flex-col gap-6">
                 {/* Main Menu Items */}
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 mt-8">
                   {menuItems.map((item) => (
                     <div key={item.title} className="flex flex-col gap-2">
                       <SheetClose asChild>

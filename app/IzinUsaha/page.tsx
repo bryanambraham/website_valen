@@ -1,3 +1,4 @@
+import { Addon } from "@/components/addon"
 import { ClientLogos } from "@/components/Clients"
 import { Counter } from "@/components/Counter"
 import { Gallery } from "@/components/Gallery"
@@ -191,6 +192,15 @@ export default function IzinUsaha() {
           />
         </div>
       </div>
+    </section>
+    
+    <section>
+    <Addon
+          title="digital add ons"
+          subtitle="Menjembatani Brand dan Costumer Anda"
+          description="Kami percaya bahwa merekrut para ahli dalam industri ini adalah cara terbaik untuk memberikan hasil yang berkualitas. Oleh karena itu, kami ingin menawarkan pengalaman dan kreasi yang terbaik agar anda fokus membangun brand anda."
+          />
+
     </section>
 
     <section className="py-16">
