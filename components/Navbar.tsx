@@ -121,8 +121,8 @@ export function Navbar() {
     {/* Hamburger Menu - Always Visible */}
         <Sheet>
           <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" className="text-white" >
-              <Menu  style={{ width: "27px", height: "27px"}}  className="absolute right-6 md:relative md:top-auto md:right-auto flex justify-center items-center"/>
+            <Button variant="ghost" size="icon" className=" text-white right-6 md:relative md:top-auto md:right-auto flex justify-center items-center" >
+              <Menu  style={{ width: "27px", height: "27px"}}  className="right-6 md:relative md:top-auto md:right-auto flex justify-center items-center"/>
               {/* <img src="/menu.svg" alt=""/> */}
             </Button>
           </SheetTrigger>
